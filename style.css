@@ -1,0 +1,137 @@
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    background-image: url("images/bg-pattern-top-desktop.svg"),
+    url("images/bg-pattern-bottom-desktop.svg");
+    position: relative;
+    margin: 155px;
+    height: 100%;
+}
+
+h1 {
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    font-size: 55px;
+    width: 70%;
+}
+
+h2 {
+    font-weight: 500;
+    color: hsl(303, 10%, 53%);
+}
+
+h3 {
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    width: 100%;
+}
+
+h4 {
+    color: hsl(300, 24%, 96%);
+}
+
+.info {
+    margin: 150px 150px 100px 0;
+    width: 45%;
+}
+
+.stars {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.review, .guru, .besttech {
+    margin: 35px;
+    padding: 13px 60px;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    
+}
+
+.review {
+    /* margin-right: 50 */
+    position: relative;
+    right: 150px;
+}
+
+.guru {
+    /* margin-right: 50 */
+    position: relative;
+    right: 100px;
+}
+
+.besttech {
+    /* margin-right: 50 */
+    position: relative;
+    right: 50px;
+}
+
+.emoji {
+    margin-right: 30px; 
+}
+
+p {
+    position: relative;
+    top: 50px;
+    text-align: left;
+}
+
+.buyer {
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+    position: relative;
+    left: -140px;
+    top: 30px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 17px;
+    margin: 20px;
+}
+
+.colton, .irene, .anne {
+    font-weight: 400;
+    padding: 50px 50px 100px 50px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    
+    
+}
+
+.colton {
+    position: absolute;
+    width: 25%;
+}
+
+.irene {
+    position: absolute;
+    width: 25%;
+    left: 550px;
+    top: 20px;
+}
+
+.anne {
+    position: absolute;
+    width: 25%;
+    left: 1100px;
+    top: 40px;
+    height: 120px;
+}
+
+.users {
+    position: relative;
+}
+
+img {
+    border-radius: 50%;
+    width: 50px;
+    float: left;
+}
+
