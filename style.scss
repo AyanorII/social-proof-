@@ -1,0 +1,202 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    background: url(images/bg-pattern-top-mobile.svg) top no-repeat, url(images/bg-pattern-bottom-mobile.svg) bottom no-repeat;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .main-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        h1 {
+            color:hsl(300, 43%, 22%);
+            font-weight: 600;
+            padding: 50px 25px 0 25px;
+        }
+
+        p {
+            padding: 0 15px 25px 15px;
+        }
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-weight: 600;
+        color: hsl(300, 43%, 22%);
+        margin-bottom: 30px;
+
+        .review {
+            background-color: hsl(300, 24%, 96%);
+            margin: 10px;
+            padding: 15px;
+            padding-bottom: 0;
+            border-radius: 10px;
+        }
+    }
+
+    .depoiments {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        color: white;
+
+        .depoiment {
+            background-color: hsl(300, 43%, 22%);
+            margin: 20px 10px;
+            padding: 30px 35px;
+            color:hsl(300, 24%, 96%);
+            border-radius: 10px;
+            font-size: 0.9rem;
+
+            .user {
+                display: flex;
+                flex-direction: column;
+                line-height: 1.8;
+                position: relative;
+                left: 25px;
+                margin-bottom: 20px;
+                
+                    p {
+                        color: hsl(300, 24%, 96%);
+                    }
+                    .user-name {
+                        font-weight: 600;
+                    }
+                    .verified-buyer {
+                        color: hsl(333, 80%, 67%);
+                    }
+            }
+
+            img {
+                width: 50px;
+                border-radius: 50px;
+                float: left;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background: url(images/bg-pattern-top-desktop.svg) top left no-repeat, url(images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+        padding: 0 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .top-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 500px;
+            margin-top: 80px;
+            margin-bottom: 0px;
+            width: 95%;
+
+                .main-container {
+                    display: inline-block;
+                    width: 38%;
+                    text-align: left;
+                    margin: 100px;
+                    margin-right: 0px;
+
+                    h1 {
+                        font-size: 3.3rem;
+                        width: 70%;
+                        margin-bottom: 0;
+                        // margin-left: 10px;
+                    }
+
+                    p {
+                        text-align: left;
+                        margin-top:20px;
+                        padding-left: 25px;
+                        font-size: 1.3rem;
+                    }
+                }
+
+        }
+
+        .reviews {
+            margin-top: 70px;
+            margin-right: 100px;
+            width: 35%;
+            height: 50%;
+
+            .review:nth-child(2) {
+                position: relative;
+                left: 60px;
+            }
+            .review:nth-child(3) {
+                position: relative;
+                left: 120px;
+            }
+
+            .review {            
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 15px;
+                width: 75%;
+                
+                span {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+
+                p {
+                    height: 1.375rem;
+                    margin: 0;
+                    padding-top: 8px;
+                
+                    
+                }
+            }
+        }
+
+        .depoiments {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+
+            .depoiment:nth-child(2) {
+                position: relative;
+                top: 20px;
+            }
+            .depoiment:nth-child(3) {
+                position: relative;
+                top: 40px;
+            }
+
+            .depoiment {
+                width: 20%;
+                height: 200px;
+                margin-top: 0;
+
+                p {
+                    line-height: 1.8;
+                    height: 150px;
+                }
+
+                img, .user {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
